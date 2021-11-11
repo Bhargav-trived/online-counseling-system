@@ -10,7 +10,7 @@
       <header class="header">
         <h1 id="title" class="text-center">Online personal councelling</h1>
       </header>
-      <form id="hyderabad.html" action="index.html" >
+      <form id="hyderabad.html" action="dashboard.html" >
         <div class="form-group">
           <p>Select your Place</p>
           <select id="dropdown" name="role" class="form-control" required>
@@ -22,7 +22,10 @@
           </select>
         </div>
         <div class="form-group">
-          
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html" style="display: inline;">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css" style="display: inline;">CSS</label><br>
         </div>
         <div class="form-group">
           <button type="submit" id="submit" class="submit-button">
@@ -32,4 +35,10 @@
       </form>
     </div>
   </body>
+  <script>
+    const bookButton = document.querySelector("#submit")
+    bookButton.addEventListener("click", ()=>{
+      alert("Slot booked");
+    })
+  </script>
 </html>
